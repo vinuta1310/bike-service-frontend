@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import AddBike from "./components/AddBike";
+import BikeList from "./components/BikeList";
+import AddServiceBooking from "./components/AddServiceBooking";
+import ServiceBookingList from "./components/ServiceBookingList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Bike Service Management</h1>
+
+      <AddBike />
+      <hr />
+
+      <BikeList />
+      <hr />
+
+      <AddServiceBooking /> 
+      <hr />
+
+      <ServiceBookingList />
     </div>
   );
 }
